@@ -21,6 +21,10 @@ RUN  cd /home/ethowatcher/
 WORKDIR /home/ethowatcher/
 
 COPY --chown=developer:developer ./analise_dados/ /home/ethowatcher/analise_dados
+COPY --chown=developer:developer ./gestao_dados/ /home/ethowatcher/gestao_dados
+RUN pip install -e /home/ethowatcher/gestao_dados/gestao-dados/
+
+
 
 
 # exposing jupyter
