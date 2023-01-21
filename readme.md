@@ -1,4 +1,11 @@
-# Precisa adicionar os repositorios
+# EthoWatcher-OS Docker
+This repo can be used to construct a docker container that has all the library, dependecies constructed and aranged of the EthoWathcher OS suit.
+
+
+## Clone all important repo
+To run this applictation you will need to assemble al the versions of the library's of the EthoWatcher-os.
+
+
 
 # Precisa dos dados
 
