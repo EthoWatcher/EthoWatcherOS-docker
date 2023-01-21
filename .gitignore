@@ -1,2 +1,6 @@
 analise_dados/*
 gestao_dados/*
+mongo_data/*
+.vscode-server/*
+.local/*
+.ipython/*
