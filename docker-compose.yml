@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  ethowatcher:
+    container_name: ethowatcheros
+    image: ethowatcheros
+    ports:
+      - 8888:8888
+      - 27017:27017
+      - 5000:5000
+    volumes:
+      - db_data:/data/db
+
+  dev_gui:
+    container_name: dev_gui
+    image: dev_gui
+    ports:
+      - 8080
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    
+
+volumes:
+  - db_data:
+      driver: local
+      driver_opts:
+        type: none
+        device: C:/mongo_data_teste/
+        o: bind
+
+    
+
+
+
+

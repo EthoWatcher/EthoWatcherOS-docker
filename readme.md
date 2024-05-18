@@ -39,6 +39,8 @@ After build you will be able to run the container, in the example command you wi
 ```ps1
 # 5 command
 docker run -p 8888:8888 -p 27017:27017 -p 5000:5000 -v C:\doutorado\software\EthoWatcherOS-docker\mongo_data\:/data/db "ethowatcheros"
+
+docker run -p 8888:8888 -p 27017:27017 -p 5000:5000 -v C:\mongo_data\:/data/db "ethowatcheros"
 ```
 
 

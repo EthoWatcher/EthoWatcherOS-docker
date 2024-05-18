@@ -16,9 +16,17 @@ RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-py38_4.11.0-Linu
 # Put conda in path so we can use conda activate
 ENV PATH=$CONDA_DIR/bin:$PATH
 RUN cd $CONDA_DIR/bin && conda init 
-RUN pip install pymc3
+RUN pip install pymc3==3.8
+RUN pip install arviz==0.11.0
 RUN pip install notebook
 RUN pip install scikit-learn
+
+RUN pip install matplotlib
+RUN apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
+
+# installing node
+RUN apt-get install -y nodejs
+RUN pip install seaborn 
 
 # VOLUME mongo_data/ /data/db/
 
@@ -36,8 +44,6 @@ RUN pip install -e /home/ethowatcher/gestao_dados/gestao-dados/
 RUN pip install -r /home/ethowatcher/gestao_dados/ethowatcher-server/requirements.txt
 
 
-# installing node
-RUN apt-get install -y nodejs
 
 # exposing jupyter
 EXPOSE 8888
