@@ -11,13 +11,13 @@ services:
     volumes:
       - db_data:/data/db
 
-  dev_gui:
-    container_name: dev_gui
-    image: dev_gui
-    ports:
-      - 8080
-    stdin_open: true # docker run -i
-    tty: true        # docker run -t
+  # dev_gui:
+  #   container_name: dev_gui
+  #   image: dev_gui
+  #   ports:
+  #     - 8080
+  #   stdin_open: true # docker run -i
+  #   tty: true        # docker run -t
     
 
 volumes:
