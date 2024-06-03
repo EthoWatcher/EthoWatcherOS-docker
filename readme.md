@@ -24,7 +24,7 @@ git clone https://github.com/EthoWatcher/gestao-dados.git
 
 ## Create MongoDB Data Folder
 
-In order to the application runs correctly you will need to create one folder that will be used to save the data of MongoDb database. For example, it might be `C:\doutorado\software\EthoWatcherOS-docker\mongo_data\` or simply `C:\mongo_data\`. Coulde be an empty folder, if you are starting fresh, or dowloand the data from my theses.
+In order to the application runs correctly you will need to create one folder that will be used to save the data of MongoDb database. For example, it might be `C:\doutorado\software\EthoWatcherOS-docker\mongo_data\` or simply `C:\mongo_data\`. Coulde be an empty folder, if you are starting fresh, or dowloand the data from my theses (https://huggingface.co/datasets/jmarcolan/theses) and backup the data to MongoDB (https://www.mongodb.com/docs/manual/tutorial/backup-and-restore-tools/).
 
 ## Build the Docker Container
 
